@@ -75,6 +75,10 @@ To add a new skill:
 3. Keep skills focused - one skill, one responsibility
 4. Test the skill in a real project before submitting
 
+## Acknowledgments
+
+Some skills in this collection are based on or inspired by skills from [mattpocock/skills](https://github.com/mattpocock/skills).
+
 ## License
 
 MIT
