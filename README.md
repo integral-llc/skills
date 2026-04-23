@@ -12,10 +12,10 @@ Skills can be invoked via slash commands in Claude Code (e.g., `/implement-a-prd
 
 | Skill | Description |
 |-------|-------------|
-| [implement-a-prd](./implement-a-prd/) | Implement a PRD with principal-engineer-grade code quality. Discovers project toolchain rules, enforces SOLID/DRY/GoF patterns, and produces code that passes lint, type check, and formatting on first commit. |
-| [write-a-prd-local](./write-a-prd-local/) | Create a PRD through user interview, codebase exploration, and module design, stored locally in the repo. |
-| [improve-codebase-architecture](./improve-codebase-architecture/) | Explore a codebase, surface architectural friction, and propose module-deepening refactors as GitHub issue RFCs. |
-| [improve-codebase-architecture-advanced](./improve-codebase-architecture-advanced/) | Metrics-driven variant: combines qualitative exploration with quantitative metrics to propose deeper module refactors as GitHub issue RFCs. |
+| [implement-a-prd](./skills/implement-a-prd/) | Implement a PRD with principal-engineer-grade code quality. Discovers project toolchain rules, enforces SOLID/DRY/GoF patterns, and produces code that passes lint, type check, and formatting on first commit. |
+| [write-a-prd-local](./skills/write-a-prd-local/) | Create a PRD through user interview, codebase exploration, and module design, stored locally in the repo. |
+| [improve-codebase-architecture](./skills/improve-codebase-architecture/) | Explore a codebase, surface architectural friction, and propose module-deepening refactors as GitHub issue RFCs. |
+| [improve-codebase-architecture-advanced](./skills/improve-codebase-architecture-advanced/) | Metrics-driven variant: combines qualitative exploration with quantitative metrics to propose deeper module refactors as GitHub issue RFCs. |
 
 ## Installation
 
@@ -40,7 +40,7 @@ Then add to `~/.claude/settings.json`:
 Copy the skill directory into your project's `.claude/skills/` directory:
 
 ```bash
-cp -r implement-a-prd /path/to/your/project/.claude/skills/
+cp -r skills/implement-a-prd /path/to/your/project/.claude/skills/
 ```
 
 Or reference it from your project's `.claude/settings.json`:
