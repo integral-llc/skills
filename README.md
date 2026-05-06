@@ -16,6 +16,7 @@ Skills can be invoked via slash commands in Claude Code (e.g., `/implement-a-prd
 | [write-a-prd-local](./skills/write-a-prd-local/) | Create a PRD through user interview, codebase exploration, and module design, stored locally in the repo. |
 | [improve-codebase-architecture](./skills/improve-codebase-architecture/) | Explore a codebase, surface architectural friction, and propose module-deepening refactors as GitHub issue RFCs. |
 | [improve-codebase-architecture-advanced](./skills/improve-codebase-architecture-advanced/) | Metrics-driven variant: combines qualitative exploration with quantitative metrics to propose deeper module refactors as GitHub issue RFCs. |
+| [standup](./skills/standup/) | Generate a morning standup from Claude Code conversation history. Reconciles prior `.standups/` for carry-forward items, produces 3 to 5 corporate-style bullets, scrubs AI tells (em dashes, banned vocabulary), writes `.standups/YYYY-MM-DD.md`. |
 
 ## Installation
 
