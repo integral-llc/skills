@@ -5,7 +5,7 @@ description: >
   and post them paced, one at a time, through a bundled driver. Applies the
   [r|o|f|c] tag scheme, dedupes against bot reviewers, lints every body against
   a fixed set of voice rules, drafts for approval, then posts with a delay sized
-  to how long each comment would take to write. Use after any PR review, when
+  to how long each comment would take to write. Use after pr-review or any PR review, when
   the user says "post the comments", "post the review", "paced comments",
   "/pr-post-comments", and as the posting step of pr-verify-review and
   pr-address-review. Works on any GitHub repo with gh auth.

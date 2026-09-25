@@ -9,8 +9,8 @@ description: >
   "answer the reviewer's comments", "reply to the reviewers", "handle the new
   comments on my PR", "/pr-address-review", or asks to fix and respond to what
   a teammate said on their PR. Works on any GitHub repo with gh auth. Bot
-  comments (Copilot, code-quality) are out of scope; re-checking someone
-  else's PR after your review belongs to pr-verify-review.
+  comments (Copilot, code-quality) are out of scope; reviewing someone else's
+  PR belongs to pr-review, re-checking it afterwards to pr-verify-review.
 ---
 
 # Address Human Review
@@ -51,7 +51,7 @@ No number given: use the PR for the current branch. `OWNER/REPO` from the URL.
   account than the active one, switch (`gh auth switch`) or set `GH_TOKEN` first,
   then re-check the login.
 - The PR author must be `ME`. If not, stop - this is someone else's PR, use
-  pr-verify-review.
+  pr-review (first pass) or pr-verify-review (after your review).
 - The checkout must be the head branch, tree clean, up to date with the remote
   (`git status -sb`, `git fetch && git status`). In a multi-worktree repo, find the
   worktree that holds the branch (`git worktree list`) and work there. Never switch
