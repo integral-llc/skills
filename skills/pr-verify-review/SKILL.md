@@ -19,8 +19,9 @@ The PR is someone else's. The user reviewed it. The author pushed changes and
 probably replied "done". The job: prove each "done" is real, catch anything the
 fixes broke, and tell the author what's still open - in the user's voice.
 
-Pairs with `pr-post-comments` (tags, voice rules, and the paced posting driver)
-and `pr-address-review` (the same loop from the author's side). Uses a personal
+Pairs with `pr-review` (the original review and its checklist),
+`pr-post-comments` (tags, voice rules, and the paced posting driver) and
+`pr-address-review` (the same loop from the author's side). Uses a personal
 voice skill for every body when one is installed.
 
 ```bash
@@ -136,7 +137,8 @@ git diff <reviewed>..head -- . ':!<lockfiles>'       # full delta
 ```
 
 - Author's new commits: review them the way the original review would have,
-  with the same checklist, applied to this delta only. At minimum: correctness,
+  with the same checklist (pr-review's T, S and D tables), applied to this
+  delta only. At minimum: correctness,
   error paths, tests for new branches, no scope creep.
 - Merge commits: `git show --remerge-diff <merge>` shows exactly how conflicts
   were resolved. A bad resolution is the classic hidden regression - base
