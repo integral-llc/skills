@@ -13,6 +13,7 @@ Skills can be invoked via slash commands in Claude Code (e.g., `/implement-a-prd
 | Skill | Description |
 |-------|-------------|
 | [implement-a-prd](./skills/implement-a-prd/) | Implement a PRD with principal-engineer-grade code quality. Discovers project toolchain rules, enforces SOLID/DRY/GoF patterns, and produces code that passes lint, type check, and formatting on first commit. |
+| [implement-issue](./skills/implement-issue/) | Implement a GitHub issue end to end. Treats the body, full comment thread, linked issues and prior PRs as the spec, ships the smallest diff that closes it with DRY/SOLID/GoF held on every line, verifies each acceptance criterion with evidence, and stops at a green working tree. |
 | [write-a-prd-local](./skills/write-a-prd-local/) | Create a PRD through user interview, codebase exploration, and module design, stored locally in the repo. |
 | [improve-codebase-architecture](./skills/improve-codebase-architecture/) | Explore a codebase, surface architectural friction, and propose module-deepening refactors as GitHub issue RFCs. |
 | [improve-codebase-architecture-advanced](./skills/improve-codebase-architecture-advanced/) | Metrics-driven variant: combines qualitative exploration with quantitative metrics to propose deeper module refactors as GitHub issue RFCs. |
